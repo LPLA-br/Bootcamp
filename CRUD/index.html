@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/style.css">
+		<title> CRUD </title>
+	</head>
+	<body class="corpo">
+		<header class="cabecalho">
+			<h1> Create Read Update and Delete </h1>
+			<p> As 4 Operações básicas de bases de dados relacionais </p>
+		</header>
+
+		<main class="principal">
+			<div class="principal-entrada">
+				<form action="" method="get" class="formulario-entrada">
+					<div>
+						<label for="name1"> Nome: </label>
+						<input type="text" name="name1" id="nome">
+					</div>
+
+					<div>
+						<label for="name2"> Idade: </label>
+						<input type="text" name="name2" id="idade">
+					</div>
+
+					<div>
+						<label for="name3"> Altura: </label>
+						<input type="text" name="name3" id="altura">
+					</div>
+
+					<div>
+						<label for="name4"> Peso: </label>
+						<input type="text" name="name4" id="peso">
+					</div>
+
+					<div>
+						<label for="name5"> Sexo: </label>
+						<input type="text" name="name5" id="sexo">
+					</div>
+
+					<div>
+						<input id="CREATE" type="button" value="Criar" onclick="criar()">
+					</div>
+				</form>
+			</div>
+
+			<div>
+				<!-- Exibe os dados na memória -->
+				<form action="" method="get" class="formulario-leitura">
+					<div>
+						<!--output de quem é a vez-->
+						<label for="ler">Saida de leitura</label>
+						<textarea name="ler" readonly id="leitura">
+						</textarea>
+					</div>
+					<div>
+						<label for="solicitar"> Insira id númerico para consultar dados: </label>
+						<input name="solicitar" type="range" min="0" max="10" step="1" id="SELECIONAR">
+						<input type="button" value="Consultar" onclick="read();">
+					</div>
+				</form>
+			</div>
+
+			<div>
+				<form action="" method="get" class="formulario-delete">
+					<div>
+						<label for="selecindcie"> Delete pelo id </label>
+						<input name="selecindcie" type="range" min="0" max="10" step="1" id="DELERE">
+						<input type="button" value="Deletar!" onclick="apagar();">
+					</div>
+				</form>
+			</div>
+
+			<div>
+				<!--Modificar valores contidos em um index na memória-->
+				<form action="" method="get" class="formulario-update">
+					<div>
+						<label for="selecindicieII"> Modificar pelo Id </label>
+						<input name="selecindcieII" type="range" min="0" max="10" step="1" id="MOSTRAR">
+						<input type="button" value="Modificar" onclick="mostrar();">
+						<input type="button" value="Mostrar" onclick="modificar();">
+					</div>
+
+					<div>
+						<label for="Name1"> Nome: </label>
+						<input type="text" name="Name1" id="nomeMOD">
+					</div>
+
+					<div>
+						<label for="Name2"> Idade: </label>
+						<input type="text" name="Name2" id="idadeMOD">
+					</div>
+
+					<div>
+						<label for="Name3"> Altura: </label>
+						<input type="text" name="Name3" id="alturaMOD">
+					</div>
+
+					<div>
+						<label for="Name4"> Peso: </label>
+						<input type="text" name="Name4" id="pesoMOD">
+					</div>
+
+					<div>
+						<label for="Name5"> Sexo: </label>
+						<input type="text" name="Name5" id="sexoMOD">
+					</div>
+
+				</form>
+			</div>
+
+		</main>
+
+		<footer class="rodape">
+			<p><small> LVIZ•PAVLVS•LIMA•ARAVJVS•MMXXII</small></p>
+		</footer>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

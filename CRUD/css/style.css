@@ -1,0 +1,85 @@
+/* Projeto de RPG */
+
+div
+{
+	background-color: #ffa000;
+}
+
+#DELERE
+{
+  /*transform: rotate(90deg);
+	padding: 90px 0px 90px 0px;*/
+}
+
+#leitura
+{
+	display: block;
+	resize: none;
+  width: 50%;
+	height: 200px;
+	background-color: #000000;
+	color: #00ff00;
+}
+
+[type="button"]
+{
+	margin: 10px;
+}
+
+.corpo
+{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 200px;
+}
+
+.cabecalho
+{
+	color: #ffffff;
+	text-align: center;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 2;
+
+	border: solid 1px black;
+	background: linear-gradient(#f00000, #f0f000);
+}
+
+.principal
+{
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 7;
+
+	border: solid 1px black;
+	background: linear-gradient(#f0f000, #f00000);
+}
+.formulario-entrada,
+.formulario-update
+{
+  display: grid;
+	grid-template-columns: 200px 200px 200px;
+}
+main > div
+{
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.rodape
+{
+	color: #ffffff;
+	text-align: center;
+	
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 7;
+	grid-row-end: 7;
+	
+	border: solid 1px grey;
+	background: linear-gradient(#f00000, #f0f000);
+}
