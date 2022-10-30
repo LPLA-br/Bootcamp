@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/treino1.css">
+		<title> Campo de Treino </title>
+	</head>
+	<body>
+		<header class="cabecalho">
+			<h1>Campo de Treino</h1>
+			<p class="tempo">Criado no dia <time datetime="2022-05-23">23 de Outubro de 2022</time></p>
+			<nav>
+				<ul class="main-nav">
+					<li><a class="espaco" href="">Sobre</a><li>
+					<li><a class="espaco" href="">Produtos</a><li>
+					<li><a class="espaco" href="">Contatos</a><li>
+					<li class="push"><a href="">Google</a><li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="introducao">
+				<figure class="figura">
+					<img src="./img/treino.jpg" alt="Campo de Treino do html">
+					<figcaption class="figura-texto"> Imagem Principal da Página </figcaption>
+				</figure>
+				<h2>Olá</h2>
+				<p>
+					Seja bem vindo ao campo de treino.
+					Aqui você lé a documentação cuidadosamente
+					e põe em prática a escrita do html atentando-se
+					para não cometer erros crassos de sintaxe.
+				</p>
+			</section>
+
+
+			<section class="saude">
+				<h2>A Sua Saúde</h2>
+					<!--aside está inline ou seja a frente
+					do proximo elemento em bloco-->
+					<aside class="lateral">
+						<p>
+							Repetições que se repetem
+							repetindo de forma initerrupta.
+						</p>
+					</aside>
+				<p>
+					Estudos recentes revelão que criar pagínas 
+					aleatórias
+					faz bem para a saúde pois: melhora o fluxo
+					sanguíneo, regula a pressão arterial, elimina
+					exesso de gordura e combate a depressão.
+				</p>
+
+			</section>
+			<section class="formulario">
+				<form action="./dados" method="get" class="formulario-form">
+					<h2 class="formulario-titulo"> Campo de teste formulário </h2>
+					<div class="formulario-nome">
+						<label for="nome">Insira Seu Primeiro Nome:</label>
+						<input type="text" name="nome" id="nome" maxlength="10" size="10" placeholder="fulano" required></input>
+					</div>
+					<div>
+						<label for="email" >Insira Seu Email:</label>
+						<input type="email" placeholder="seu email"></input>
+					</div>
+					<fieldset class="formulario-selecao">
+						<legend>Escolha o Seu Sistema Operacional</legend>
+
+						<input type="radio" id="linux" name="sistema"></input>
+						<label for="selecao">Linux</label>
+
+						<input type="radio" id="windows" name="sistema"></input>
+						<label for="selecao">Windows</label>
+
+						<input type="radio" id="bsd" name="sistema"></input>
+						<label for="selecao">Bsd</label>
+					</fieldset>
+					<div class="formulario-envio">
+						<label for="desejo">Deseja Receber Dicas no seu email?</label>
+						<input type="checkbox" id="desejo"></input>
+					</div>
+						<input type="button" value="Enviar"></input>
+				</form>
+			</section>
+			<article class="scroller">
+				<section class="scroller-sub">
+					<h3 class="scroller-h">Júpiter</h3>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg/300px-Jupiter_and_its_shrunken_Great_Red_Spot.jpg" alt="Planeta terra">
+				</section>
+				<section class="scroller-sub">
+					<h3 class="scroller-h">Terra</h3>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/300px-The_Blue_Marble_%28remastered%29.jpg" alt="Planeta Terra">
+				</section>
+				<section class="scroller-sub">
+					<h3 class="scroller-h">Saturno</h3>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Saturn_during_Equinox.jpg/300px-Saturn_during_Equinox.jpg" alt="Planeta Saturno">
+				</section>
+			</article>
+			<div class="caixas">
+				<div class="caixas-sub"><p>Cêmbalo</p></div>
+				<div class="caixas-sub"><p>Alaúde</p></div>
+				<div class="caixas-sub"><p>Virginal</p></div>
+			</div>
+		</main>
+		<footer class="rodape">
+			<p class="autoral"> © 2022 Luiz Paulo </p>
+			<address>
+				<a href="mailto:mluiz0674@outlook.com">mluiz0674@outlook.com</a>
+				<a href="tel:+5584998677219">(55)84 998677219</a>
+			</address>
+		<script src="./js/treino1.html"></script>
+		</footer>
+	</body>
+</html>

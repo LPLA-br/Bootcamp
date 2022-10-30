@@ -1,0 +1,12 @@
+
+body
+{
+	background-color: black;
+	color: white;
+}
+
+fieldset
+{
+	display: flex;
+	border: 1px solid #ffffff33;
+}

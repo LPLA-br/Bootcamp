@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Canvas </title>
+	</head>
+	<body onload="draw()">
+		<header>
+			<h1>Supeficie de desenho</h1>
+		</header>
+		<main>
+			<form>
+				<input type="button" name="cima" value="^" onClick="movimento(1)">
+				<input type="button" name="baixo" value="v" onClick="movimento(2)">
+				<input type="button" name="direita" value=">" onClick="movimento(3)">
+				<input type="button" name="esquerda" value="<" onClick="movimento(4)">
+			</form>
+			<canvas style="background-color: black;" id="canvas01" class="canvas" width="512" height="512"></canvas>
+		</main>
+		<footer>
+			<p>Luiz Paulo 2022 Periodo I</p>
+		</footer>
+		<script src="js/canvas.js"></script>
+	</body>
+</html>

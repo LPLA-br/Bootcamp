@@ -1,0 +1,219 @@
+/*treino1.css treino1.html*/
+/*estilização orientada a gambiarra*/
+
+/*setor geral*/
+html
+{
+	font-family: helvetica, arial, sans-serif;
+	letter-spacing: 1px;
+	padding-top: 10px;
+	background-image:linear-gradient(rgba(0,0,255,0.5), rgba(0,255,0,0.5)) ;
+}
+
+h1
+{
+	background-image:linear-gradient(rgba(0,56,255,0.5), rgba(0,255,56,0.5)) ;
+	border-top: solid 2px black;
+	border-Bottom: solid 2px black;
+	border-left: solid 2px black;
+	border-right:solid 2px black;
+	width: 30%;
+	margin-left: 30%;
+	text-align: center;
+	border-end-end-radius: 14px 14px;
+	border-end-start-radius: 14px 14px;
+  border-start-end-radius: 14px 14px;
+	border-start-start-radius: 14px 14px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+ul
+{
+	list-style: none;
+}
+
+.main-nav
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+h2
+{
+	padding-left: 3px;
+}
+
+aside > p
+{
+	margin: .5rem;
+}
+
+p
+{
+	text-align: justify;
+}
+
+/*setor das classes*/
+
+.tempo
+{
+	text-align: center;
+}
+
+.cabecalho, .rodape
+{
+	background-color: #45a1ff;
+  	border: 1rem solid #29627e;
+	border-end-end-radius: 14px 14px;
+	border-end-start-radius: 14px 14px;
+	border-start-end-radius: 14px 14px;
+	border-start-start-radius: 14px 14px;
+}
+
+.figura
+{
+	border:thin #c0c0c0 solid;
+	display: flex;
+	float: right;
+	flex-flow: column;
+	padding: 4px 4px 4px 4px;
+	max-width: 290px;
+	margin-bottom: 5%;
+	background-color: #040404;
+	border-end-end-radius: 14px 14px;
+	border-end-start-radius: 14px 14px;
+}
+
+.figura-texto
+{
+	font-size: 14px;
+  	color: #f0f0f0;
+	text-align: center;
+	padding-top: 4px;
+}
+
+.lateral
+{
+	width: 40%;
+	padding-left: .5rem;
+	margin-left: .5rem;
+	float: right;
+	box-shadow: inset 5px 0 5px -5px #29627e;
+	font-style: italic;
+	color: #29627e;
+}
+
+.formulario-titulo
+{
+	border-bottom: solid 1px black;
+	padding-bottom: 10px;
+}
+.formulario
+{
+	margin-bottom: 40px;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+	background-color: #29627e;
+	border: solid black 1px;
+	border-end-end-radius: 14px 14px;
+	border-end-start-radius: 14px 14px;
+	border-start-end-radius: 14px 14px;
+	border-start-start-radius: 14px 14px;
+}
+
+.scroller
+{
+	height: 400px;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+.scroller-sub
+{
+	height: 400px;
+	scroll-snap-align: start;
+	background-color: #1565;
+	margin: 20px;
+	border-end-end-radius: 14px 14px;
+	border-end-start-radius: 14px 14px;
+	border-start-end-radius: 14px 14px;
+	border-start-start-radius: 14px 14px;
+}
+
+.formulario-selecao
+{
+	background-color: inherit;
+	color: #ff5500;
+	padding: 3px 6px;
+	margin: 2rem;
+	display: inline;
+	border-end-end-radius: 14px 14px;
+	border-end-start-radius: 14px 14px;
+	border-start-end-radius: 14px 14px;
+	border-start-start-radius: 14px 14px;
+}
+
+/*animação*/
+.scroller-sub
+{
+	animation-duration: 10s;
+	animation-name: movimento;
+	font-size: 20px;
+	padding-left: 30%;
+}
+
+@keyframes movimento
+{
+	from
+	{
+		font-size: 1px;
+		padding-left: 10%;
+	}
+	to
+	{
+		font-size: 20px;
+		padding-left: 30%;
+	}
+}
+
+/*flexbox*/
+.caixas
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 30px;
+}
+
+.caixas-sub
+{
+	border: solid 1px black;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+.rodape
+{
+	justify-content: center;
+	margin-top: 20px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #fff;
+	text-align: center;
+}
+
+.autoral
+{
+	color: #dfdfdf;
+	text-align: center;
+	border-inline: 0.3rem solid #29627e;
+	writing-mode: horizontal-tb;
+	display: flex;
+	flex-flow: column;
+	max-width: 155px;
+	margin: auto;
+}
+
+

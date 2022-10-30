@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--Teste de entrada -> processamento -> saída
+com elementos de formulários.
+Cuidado! contém partes escritas no paradigma da
+programação orientada a gambiarra-->
+
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/io.css">
+		<script src="./js/io.js"></script>
+		<title> Central de Controle </title>
+	</head>
+	<body>
+		<header>
+			<h1> Central de Controle </h1>
+			<p><small>campo de testes</small></p>
+		</header>
+
+		<main>
+			<section>
+				<h3>Pseudo Dispositivos</h3>
+				<article>
+					<h3>Microfone</h3>
+					<form name="microfone" actio="" method="get">
+						<fieldset>
+							<label for="nome">Renomear dispositivo:</label>
+							<input type="text" name="inputbox" value=""></input>
+							<input type="button" name="button" value="validar" onClick="EscreverTexto(this.form, NomeDoDispositivo(this.form), true)">
+						</fieldset>
+						<fieldset>
+							<label for="" value="estado">Estado do dispositivo:</label>
+
+							<!--ligado abaixo-->
+							<input type="radio" name="estado" value="true" CHECKED onClick=0>
+							<label for="ligado" > Ligado </label>
+
+							<!--desligado abaixo-->
+							<input type="radio" name="estado" value="false" CHECKED onClick=0>
+							<label for="desligado"> Desligado </label>
+
+							<input type="button" name="button2" value="validar" onClick="EscreverTexto(this.form ,EstadoDoDispositivo(this.form), true)">
+						</fieldset>
+						<fieldset>
+							<label for="checar">Funcionalidades do dispositivo:</label><br>
+							<input type="checkbox" name="checar" value="0" CHECKED>eco<br>
+							<input type="button" name="button4" value="validar Opções" onClick="ValidarCheckboxes(this.form)">
+							<br>
+						</fieldset>
+
+						<fieldset>
+							<label for="inputbox2">Teste de eco:</label>
+							<input type="text" name="inputbox2" value="">
+							<input type="button" name="button3" value="validar" onClick="EscreverTexto(this.form ,LerTexto(this.form), ecoPermission)">
+						</fieldset>
+						<fieldset>
+							<label for="saida">Saída Principal</label>
+							<textarea name="saida"></textarea>
+						</fieldset>
+					</form>
+
+				</article>
+			</section>
+		</main>
+
+		<footer>
+			<p><small>
+				Luiz Paulo 2022 Periodo I 
+				Referência orientadora: <a href="https://www.infoworld.com/article/2077176/using-javascript-and-forms.html">infoworld</a>
+			</small></p>
+		</footer>
+	</body>
+</html>

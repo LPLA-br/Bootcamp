@@ -1,0 +1,46 @@
+/*estilo de treino3.html*/
+
+.area
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: 100px;
+}
+
+.area-0
+{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	border: solid 1px black;
+	background: linear-gradient(white, grey);
+}
+
+.area-1
+{
+	grid-column-start: 1;
+	grid-row-start: 3;
+	grid-row-end: 6;
+	border: solid 1px black;
+	background: linear-gradient(grey, white);
+}
+
+.area-2
+{
+	grid-column-start: 2;
+	grid-row-start: 3;
+	grid-row-end: 6;
+	border: solid 1px black;
+	background: linear-gradient(grey, white);
+}
+
+.area-3
+{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 6;
+	grid-row-end: 7;
+	border: solid 1px black;
+	background: linear-gradient(white, grey);
+}
