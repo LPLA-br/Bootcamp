@@ -1,6 +1,6 @@
 
-# CAMPO DE TREINO - LPLA-BOOTCAMP WEB (DESDE ABRIL 2022)
+# BOOTCAMP DESDE ABRIL 2022
 
 <p>
-    Campo de treino das tecnologias web.
+    Campo de treino da tríade front end
 </p>
